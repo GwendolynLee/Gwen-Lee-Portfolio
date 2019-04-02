@@ -1,0 +1,289 @@
+/* 
+
+IMAGE REFERENCES:
+
+
+woman at computer: https://as1.ftcdn.net/jpg/01/19/94/92/500_F_119949244_N6ZrNBPIGmeTazLwxgnCqPzUatgGFIsT.jpg
+
+laptop & pineapple:
+https://images.unsplash.com/photo-1474929550468-4700a789f57e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80
+
+public-speaking:
+https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
+
+window washing:
+https://images.unsplash.com/photo-1469981283837-561b3779462f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
+
+automotive shop:
+https://images.unsplash.com/photo-1530035415911-95194de4ebcc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
+
+ORANGE COLOR: 
+rgba(231, 76, 60, 0.50)
+
+
+*/
+
+
+/* ---------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------- */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight:  200;
+    text-rendering: optimizeLegibility;
+}
+
+/* ---------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ---------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: ;
+}
+
+/* ----- HEADINGS ----- */
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    color: #D3D3D3;
+}
+
+h2 {
+    margin-top: 0;
+    letter-spacing: 2px;
+    color: #D3D3D3;
+}
+
+h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 0 25px 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    color: white;
+    
+}
+/* ---------------------------------------- */
+/* HEADER */
+/* ---------------------------------------- */
+
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/office-pineapple.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    background-attachment: fixed; 
+}
+
+.front-page {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+}
+
+h1, .myname {
+    font-size: 300%;
+    font-weight: strong;   
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 13%;
+}
+
+h2, .my title {
+    text-align: left;
+    font-size: 200%;
+    margin-left: 10%;
+}
+
+
+/* ---------------------------------------- */
+/* NAVIGATION */
+/* ---------------------------------------- */
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 20px 20px 20px;
+}
+
+.nav-buttons {
+
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none; 
+    margin: 0;
+    color: black; 
+    bottom; 0;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 40px;
+    margin-right: 50px;
+    margin-left: 50px;
+    color: white;
+}
+
+/* ---------------------------------------- */
+/* QUOTATION */
+/* ---------------------------------------- */
+
+.quote {
+    color: black;
+    padding: 50px 100px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+/* ---------------------------------------- */
+/* PROJECTS */
+/* ---------------------------------------- */
+
+
+
+#projects {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 40px 40px 40px 40px;
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+
+.projects__icons {
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+}
+
+.projects__speech-tutor img {
+    padding: 1em 1em 0 1em;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    box-shadow:  border: 1px black;
+}
+
+.projects__window-washing img{
+    padding: 1em 1em 0 1em;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.projects__auto-shop img{
+    padding: 1em 1em 0 1em;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+/* ---------------------------------------- */
+/* TECHNOLOGIES */
+/* ---------------------------------------- */
+
+#technologies {
+ background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    text-align: center;
+}
+
+.tech-logo {
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+}
+
+.tech-logo__html img{
+    padding: 1em 1em 0 1em;
+    text-align: center;
+    width: 60%;
+    height: 60%;
+}
+
+.tech-logo__css img{
+    padding: 1em 1em 0 1em;
+    text-align: center;
+    width: 60%;
+    height: 60%;
+}
+
+.tech-logo__js img{
+    padding: 1em 1em 0 1em;
+    text-align: center;
+    width: 60%;
+    height: 60%;
+}
+
+.tech-logo__ps img{
+    padding: 1em 1em 0 1em;
+    text-align: center;
+    width: 60%;
+    height: 60%;
+}
+
+/* ---------------------------------------- */
+/* ABOUT ME */
+/* ---------------------------------------- */
+
+#aboutme {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    text-align: center;
+    
+}
+
+.aboutme_text {
+
+    text-align: left;
+}
+
+.profilepic {
+    border-radius: 200px;
+    width: 15%;
+    margin: 0 10px 0 0;
+    float: left
+}
+
+/* ---------------------------------------- */
+/* CONTACT */
+/* ---------------------------------------- */
+
+.contact-info {
+    text-align: right;
+}
+
