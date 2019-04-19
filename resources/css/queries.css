@@ -1,0 +1,84 @@
+/* Big tablet to 1200px (widths smaller than 1140px row) */
+@media only screen and (max-width: 1200px) {
+    
+    .profilepic {
+    width: 60%;
+    }
+    
+}
+
+
+
+/* Small tablet to big tablet: from 768 to 1023px */
+@media only screen and (max-width: 1023px) {
+    
+    
+}
+
+
+/* Small phones to small tablets: from 481 to 767px */
+@media only screen and (max-width: 767px) {
+    
+    .nav-buttons {
+    margin: 20px 50px 20px 50px;
+    }
+    
+    
+    /* Technologies */  
+    .tech-logo__html img{
+        padding: 0;
+    }
+
+    .tech-logo__css img{
+        padding: 0;
+    }
+
+    .tech-logo__js img{
+        padding: 0;
+    }
+
+    .tech-logo__ps img{
+        padding: 0;
+    }
+    
+    /* About Me */    
+    .wrapper {
+        display: block;
+    }
+
+    .profilepic {
+        width: 25%;
+    }
+    
+    /* Contact Info */    
+    .contact-info {
+        padding: 10px;
+    }
+    
+    
+}
+
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    
+    h1, .myname {
+        font-size: 200%;
+        margin-left: 80px;
+    }
+
+    h2, .my title {
+        font-size: 100%;
+        margin-left: 80px;
+    }
+    
+    
+    /* nav buttons */
+     ul {
+       margin-left: -20px;
+    }
+
+    .nav-buttons {
+        margin: 10px;
+    }
+}

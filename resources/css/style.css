@@ -1,7 +1,5 @@
 /* 
-
 IMAGE REFERENCES:
-
 
 woman at computer: https://as1.ftcdn.net/jpg/01/19/94/92/500_F_119949244_N6ZrNBPIGmeTazLwxgnCqPzUatgGFIsT.jpg
 
@@ -20,14 +18,12 @@ https://images.unsplash.com/photo-1530035415911-95194de4ebcc?ixlib=rb-1.2.1&ixid
 ORANGE COLOR: 
 rgba(231, 76, 60, 0.50)
 
-
 */
 
 
 /* ---------------------------------------- */
 /* BASIC SETUP */
 /* ---------------------------------------- */
-
 
 * {
     margin: 0;
@@ -48,8 +44,7 @@ html {
 /* ---------------------------------------- */
 
 .row {
-    max-width: 1140px;
-    margin: ;
+    max-width: 1140px;  
 }
 
 /* ----- HEADINGS ----- */
@@ -58,13 +53,13 @@ h1 {
     margin-top: 0;
     margin-bottom: 0;
     letter-spacing: 2px;
-    color: #D3D3D3;
+    color: #e5e5e5;
 }
 
 h2 {
     margin-top: 0;
     letter-spacing: 2px;
-    color: #D3D3D3;
+    color: #e5e5e5;
 }
 
 h3 {
@@ -81,8 +76,8 @@ a {
 
 p {
     color: white;
-    
 }
+
 /* ---------------------------------------- */
 /* HEADER */
 /* ---------------------------------------- */
@@ -91,29 +86,27 @@ p {
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/office-pineapple.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    background-position:center;
     height: 100vh;
-    background-attachment: fixed; 
+    background-attachment: fixed;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    padding:0 20px;
 }
 
 .front-page {
-    position: absolute;
     width: 100%;
-    top: 30%;
 }
 
 h1, .myname {
     font-size: 300%;
-    font-weight: strong;   
-    text-align: left;
-    margin-left: 10%;
-    margin-top: 13%;
+    margin-left: 150px;
 }
 
 h2, .my title {
-    text-align: left;
     font-size: 200%;
-    margin-left: 10%;
+    margin-left: 150px;
 }
 
 
@@ -121,29 +114,34 @@ h2, .my title {
 /* NAVIGATION */
 /* ---------------------------------------- */
 
-
 ul {
+    width: 100%;
     list-style-type: none;
+    position: absolute;
+    bottom: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px 20px 20px 20px;
+    align-items: center;
 }
 
 .nav-buttons {
-
     display: inline-block;
     list-style-type: none;
     text-decoration: none; 
-    margin: 0;
     color: black; 
-    bottom; 0;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
-    padding: 10px 40px;
-    margin-right: 50px;
-    margin-left: 50px;
-    color: white;
+    padding: 5px 20px;
+    margin: 20px 90px 20px 90px;
+    color: #e5e5e5;
+    border: #e5e5e5 1px solid;
+    border-radius: 10px;
+}
+
+.nav-buttons:hover {
+    background:#e5e5e5;
+    color:black;
 }
 
 /* ---------------------------------------- */
@@ -151,8 +149,9 @@ ul {
 /* ---------------------------------------- */
 
 .quote {
+    background-color: #faefef;
     color: black;
-    padding: 50px 100px;
+    padding: 75px 200px;
     text-align: center;
     font-size: 23px;
     font-weight: 500;
@@ -164,11 +163,14 @@ ul {
 /* ---------------------------------------- */
 
 
-
 #projects {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.75);
     padding: 40px 40px 40px 40px;
     text-align: center;
+}
+
+#projects h3 {    
+    color: #e5e5e5;
 }
 
 .img {
@@ -179,6 +181,7 @@ ul {
 figcaption {
     text-align: center;
     font-weight: bold;
+    color: #e5e5e5;
 }
 
 .projects__icons {
@@ -193,7 +196,6 @@ figcaption {
     width: 100%;
     height: 100%;
     border-radius: 50px;
-    box-shadow:  border: 1px black;
 }
 
 .projects__window-washing img{
@@ -212,14 +214,19 @@ figcaption {
     border-radius: 50px;
 }
 
+
 /* ---------------------------------------- */
 /* TECHNOLOGIES */
 /* ---------------------------------------- */
 
 #technologies {
- background-color: rgba(0, 0, 0, 0.5);
-    padding: 40px;
+    background-color: #faefef;
+    padding: 30px;
     text-align: center;
+}
+
+#technologies h3 {
+    color: black;
 }
 
 .tech-logo {
@@ -229,28 +236,28 @@ figcaption {
 }
 
 .tech-logo__html img{
-    padding: 1em 1em 0 1em;
+    padding: 0 1em;
     text-align: center;
     width: 60%;
     height: 60%;
 }
 
 .tech-logo__css img{
-    padding: 1em 1em 0 1em;
+    padding: 0 1em;
     text-align: center;
     width: 60%;
     height: 60%;
 }
 
 .tech-logo__js img{
-    padding: 1em 1em 0 1em;
+    padding: 0 1em;
     text-align: center;
     width: 60%;
     height: 60%;
 }
 
 .tech-logo__ps img{
-    padding: 1em 1em 0 1em;
+    padding: 0 1em;
     text-align: center;
     width: 60%;
     height: 60%;
@@ -264,19 +271,24 @@ figcaption {
     background-color: rgba(0, 0, 0, 0.75);
     padding: 40px;
     text-align: center;
-    
+    color: #e5e5e5;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 1em;
+    align-items: center;
 }
 
 .aboutme_text {
-
     text-align: left;
+    color: #e5e5e5;
 }
 
 .profilepic {
     border-radius: 200px;
-    width: 15%;
-    margin: 0 10px 0 0;
-    float: left
+    width: 60%;
 }
 
 /* ---------------------------------------- */
@@ -284,6 +296,14 @@ figcaption {
 /* ---------------------------------------- */
 
 .contact-info {
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 30px;
+    color: black;
     text-align: right;
+}
+
+.icon-contact {
+    margin: .5em;
+    font-size: 35px;
 }
 
