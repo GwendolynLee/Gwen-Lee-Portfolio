@@ -1,10 +1,35 @@
 /* Big tablet to 1200px (widths smaller than 1140px row) */
 @media only screen and (max-width: 1200px) {
     
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    h3 {
+        font-size: 2.4rem;    
+    }
+    
     .profilepic {
     width: 60%;
     }
+  
+    .nav-buttons {
+        font-size: 1.75rem;
+        margin: 1rem 3rem;
+        padding: 5px 20px;
+    }
     
+    .quote {       
+        font-size: 2rem;
+    }
+    
+    .aboutme_text {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -12,6 +37,9 @@
 /* Small tablet to big tablet: from 768 to 1023px */
 @media only screen and (max-width: 1023px) {
     
+    .nav-buttons {
+        margin: 20px 50px 20px 50px;
+    }
     
 }
 
@@ -58,27 +86,60 @@
     
 }
 
-
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
     
     h1, .myname {
         font-size: 200%;
-        margin-left: 80px;
     }
 
     h2, .my title {
         font-size: 100%;
-        margin-left: 80px;
     }
     
     
     /* nav buttons */
-     ul {
-       margin-left: -20px;
-    }
 
     .nav-buttons {
-        margin: 10px;
+        margin: .5rem;
+        font-size: 50%;
     }
+    
+    /* quote */
+    .quote {
+    padding: 25px 40px;
+    font-size: 90%;
+    }
+    
+    /* about me*/
+    .aboutme_text {
+        font-size: 90%;
+    }
+}
+
+/* Smaller phones: from 0 to 360px */
+@media only screen and (max-width: 411px) {
+    
+    br {
+        display: static;
+    }
+    
+    .projects__auto-shop img{
+        width: 85%;
+        height: 85%;
+    }
+        
+    h3 {
+        font-size: 1.2rem;
+        margin: 0 0 10px 0; 
+    }
+    
+    figcaption {
+        font-size: 1rem;
+    }
+    
+    .icon-contact {
+        font-size: 2rem;
+    }
+    
 }
