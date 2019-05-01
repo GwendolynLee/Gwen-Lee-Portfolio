@@ -34,8 +34,7 @@ rgba(231, 76, 60, 0.50)
 html {
     color: #000;
     font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    font-weight:  200;
+    font-weight: 200;
     text-rendering: optimizeLegibility;
 }
 
@@ -54,18 +53,20 @@ h1 {
     margin-bottom: 0;
     letter-spacing: 2px;
     color: #e5e5e5;
+    font-size: 4.5rem;
 }
 
 h2 {
     margin-top: 0;
     letter-spacing: 2px;
     color: #e5e5e5;
+    font-size: 2.5rem;
 }
 
 h3 {
     color: white;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.75rem;
     margin: 0 0 25px 0;
 }
 
@@ -76,6 +77,10 @@ a {
 
 p {
     color: white;
+}
+
+br {
+    display: none;
 }
 
 /* ---------------------------------------- */
@@ -92,21 +97,15 @@ header {
     display:flex;
     flex-direction:column;
     justify-content: center;
-    padding:0 20px;
 }
 
 .front-page {
     width: 100%;
-}
-
-h1, .myname {
-    font-size: 300%;
-    margin-left: 150px;
-}
-
-h2, .my title {
-    font-size: 200%;
-    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -128,21 +127,22 @@ ul {
 .nav-buttons {
     display: inline-block;
     list-style-type: none;
-    text-decoration: none; 
     color: black; 
-    font-size: 18px;
+    font-size: 1.25rem;
     font-weight: bold;
+    margin: 1rem 5rem;
     padding: 5px 20px;
-    margin: 20px 90px 20px 90px;
     color: #e5e5e5;
     border: #e5e5e5 1px solid;
     border-radius: 10px;
+    transition: background 500ms ease;
 }
 
 .nav-buttons:hover {
     background:#e5e5e5;
     color:black;
 }
+
 
 /* ---------------------------------------- */
 /* QUOTATION */
@@ -151,9 +151,9 @@ ul {
 .quote {
     background-color: #faefef;
     color: black;
-    padding: 75px 200px;
+    padding: 50px 100px;
     text-align: center;
-    font-size: 23px;
+    font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: .5px;
 }
@@ -182,6 +182,8 @@ figcaption {
     text-align: center;
     font-weight: bold;
     color: #e5e5e5;
+    font-size: 1.2rem;
+    margin: 5px 20px;
 }
 
 .projects__icons {
@@ -284,6 +286,7 @@ figcaption {
 .aboutme_text {
     text-align: left;
     color: #e5e5e5;
+    font-size: 1.25rem;
 }
 
 .profilepic {
@@ -304,6 +307,5 @@ figcaption {
 
 .icon-contact {
     margin: .5em;
-    font-size: 35px;
+    font-size: 3rem;
 }
-
