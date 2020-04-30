@@ -1,25 +1,3 @@
-/* 
-IMAGE REFERENCES:
-
-woman at computer: https://as1.ftcdn.net/jpg/01/19/94/92/500_F_119949244_N6ZrNBPIGmeTazLwxgnCqPzUatgGFIsT.jpg
-
-laptop & pineapple:
-https://images.unsplash.com/photo-1474929550468-4700a789f57e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80
-
-public-speaking:
-https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
-
-window washing:
-https://images.unsplash.com/photo-1469981283837-561b3779462f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
-
-automotive shop:
-https://images.unsplash.com/photo-1530035415911-95194de4ebcc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
-
-ORANGE COLOR: 
-rgba(231, 76, 60, 0.50)
-
-*/
-
 
 /* ---------------------------------------- */
 /* BASIC SETUP */
@@ -76,7 +54,7 @@ a {
 }
 
 p {
-    color: white;
+    color: yellow;
 }
 
 br {
@@ -89,7 +67,7 @@ br {
 
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/office-pineapple.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/home_office.jpeg);
     background-size: cover;
     background-position:center;
     height: 100vh;
@@ -113,7 +91,7 @@ header {
 /* NAVIGATION */
 /* ---------------------------------------- */
 
-ul {
+.nav-wrapper {
     width: 100%;
     list-style-type: none;
     position: absolute;
@@ -149,7 +127,7 @@ ul {
 /* ---------------------------------------- */
 
 .quote {
-    background-color: #faefef;
+    background-color: white;
     color: black;
     padding: 50px 100px;
     text-align: center;
@@ -162,59 +140,43 @@ ul {
 /* PROJECTS */
 /* ---------------------------------------- */
 
-
 #projects {
-    background-color: rgba(0, 0, 0, 0.75);
-    padding: 40px 40px 40px 40px;
+    background-color: #555;
     text-align: center;
+    color: #e5e5e5;
 }
 
 #projects h3 {    
     color: #e5e5e5;
+    padding-top: 20px;
 }
 
-.img {
-    width: 100%;
-    height: 100%;
+.background-black {
+    background-color: #282828;
 }
 
-figcaption {
+.background-medgrey {
+    background-color: #444;
+}
+
+.background-darkgrey {
+    background-color: #333;
+}
+.project_pic {
+    max-width: 500px;
+    padding: 5px;
+}
+
+.project_text {
     text-align: center;
-    font-weight: bold;
     color: #e5e5e5;
     font-size: 1.2rem;
-    margin: 5px 20px;
+    padding-bottom: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
-.projects__icons {
-    display: flex;
-    height: auto;
-    justify-content: space-around;
-}
 
-.projects__speech-tutor img {
-    padding: 1em 1em 0 1em;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-}
-
-.projects__window-washing img{
-    padding: 1em 1em 0 1em;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-}
-
-.projects__auto-shop img{
-    padding: 1em 1em 0 1em;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-}
 
 
 /* ---------------------------------------- */
@@ -222,7 +184,7 @@ figcaption {
 /* ---------------------------------------- */
 
 #technologies {
-    background-color: #faefef;
+    background-color: white;
     padding: 30px;
     text-align: center;
 }
@@ -235,35 +197,16 @@ figcaption {
     display: flex;
     height: auto;
     justify-content: space-around;
+
 }
 
-.tech-logo__html img{
-    padding: 0 1em;
+.tech-logo_icon img{
+    padding: 0 0em;
     text-align: center;
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 100%;
 }
 
-.tech-logo__css img{
-    padding: 0 1em;
-    text-align: center;
-    width: 60%;
-    height: 60%;
-}
-
-.tech-logo__js img{
-    padding: 0 1em;
-    text-align: center;
-    width: 60%;
-    height: 60%;
-}
-
-.tech-logo__ps img{
-    padding: 0 1em;
-    text-align: center;
-    width: 60%;
-    height: 60%;
-}
 
 /* ---------------------------------------- */
 /* ABOUT ME */
@@ -278,8 +221,7 @@ figcaption {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-column-gap: 1em;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
@@ -291,7 +233,7 @@ figcaption {
 
 .profilepic {
     border-radius: 200px;
-    width: 60%;
+    max-width: 250px;
 }
 
 /* ---------------------------------------- */
@@ -300,11 +242,30 @@ figcaption {
 
 .contact-info {
     background-color: rgba(0, 0, 0, 0.55);
-    padding: 30px;
+    padding: 5px;
     color: black;
     text-align: right;
 }
 
+.social-wrapper {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-buttons {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 5rem;
+    padding: 5px 20px;
+    color: #e5e5e5;
+    transition: background 500ms ease;
+}
 .icon-contact {
     margin: .5em;
     font-size: 3rem;

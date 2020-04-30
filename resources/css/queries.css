@@ -16,6 +16,10 @@
     .profilepic {
     width: 60%;
     }
+    
+    .project_pic {
+        width: 70%;
+    }
   
     .nav-buttons {
         font-size: 1.75rem;
@@ -28,7 +32,7 @@
     }
     
     .aboutme_text {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 }
 
@@ -43,7 +47,6 @@
     
 }
 
-
 /* Small phones to small tablets: from 481 to 767px */
 @media only screen and (max-width: 767px) {
     
@@ -53,21 +56,10 @@
     
     
     /* Technologies */  
-    .tech-logo__html img{
+    .tech-logo_icon img{
         padding: 0;
     }
 
-    .tech-logo__css img{
-        padding: 0;
-    }
-
-    .tech-logo__js img{
-        padding: 0;
-    }
-
-    .tech-logo__ps img{
-        padding: 0;
-    }
     
     /* About Me */    
     .wrapper {
@@ -75,7 +67,11 @@
     }
 
     .profilepic {
-        width: 25%;
+        width: 40%;
+    }
+    
+    .aboutme_text {
+        font-size: 90%;
     }
     
     /* Contact Info */    
